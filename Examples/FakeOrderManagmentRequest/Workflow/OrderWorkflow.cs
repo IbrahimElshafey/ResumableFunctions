@@ -25,6 +25,15 @@ namespace FakeOrderManagmentRequest.Workflow
         // notify client that order refunded successfly
         public int OrderId { get; set; }
         public int ClientId { get; set; }
+        public async Task<int> Test()
+        {
+            int x = 1;
+            await Task.Delay(1000);
+            x = 2;
+            await Task.Delay(1000);
+            x = 3;
+            return x;
+        }
 
         [ResumableFunctionEntryPoint("OrderWorkflow")]
         public async IAsyncEnumerable<Wait> StartWorkflow()

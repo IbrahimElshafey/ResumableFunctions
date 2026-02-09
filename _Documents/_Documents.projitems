@@ -11,7 +11,9 @@
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)Articles\Article1.md" />
     <None Include="$(MSBuildThisFileDirectory)DB\delete_tests_dbs.sql" />
-    <None Include="$(MSBuildThisFileDirectory)Reading and Ideas\Services And Clients Communication.md" />
+    <None Include="$(MSBuildThisFileDirectory)GitHubDocs\BasicWaitTypes.md" />
+    <None Include="$(MSBuildThisFileDirectory)GitHubDocs\WaitTypesUseCases.md" />
+    <None Include="$(MSBuildThisFileDirectory)~Old\Services And Clients Communication.md" />
     <None Include="$(MSBuildThisFileDirectory)GitHubDocs\WIN_V1.0.10.md" />
     <None Include="$(MSBuildThisFileDirectory)GitHubDocs\What Help.md" />
     <None Include="$(MSBuildThisFileDirectory)GitHubDocs\Internals.md" />
@@ -21,17 +23,17 @@
     <None Include="$(MSBuildThisFileDirectory)GitHubDocs\Resumable_Functions_UI.md" />
     <None Include="$(MSBuildThisFileDirectory)GitHubDocs\Cleaning_Job.md" />
     <None Include="$(MSBuildThisFileDirectory)DB\query.sql" />
-    <None Include="$(MSBuildThisFileDirectory)Reading and Ideas\Commands.md" />
+    <None Include="$(MSBuildThisFileDirectory)~Old\Commands.md" />
     <None Include="$(MSBuildThisFileDirectory)Articles\Documentation_Plan.md" />
     <None Include="$(MSBuildThisFileDirectory)Reading and Ideas\External Reading.md" />
-    <None Include="$(MSBuildThisFileDirectory)Reading and Ideas\Aggregate Column Idea.md" />
+    <None Include="$(MSBuildThisFileDirectory)~Old\Aggregate Column Idea.md" />
     <None Include="$(MSBuildThisFileDirectory)~Old\Publisher.md" />
     <None Include="$(MSBuildThisFileDirectory)~Old\Features.md" />
     <None Include="$(MSBuildThisFileDirectory)Reading and Ideas\Service Fabric.md" />
     <None Include="$(MSBuildThisFileDirectory)Testing.md" />
-    <None Include="$(MSBuildThisFileDirectory)Reading and Ideas\MVC_Use.md" />
+    <None Include="$(MSBuildThisFileDirectory)~Old\MVC_Use.md" />
     <None Include="$(MSBuildThisFileDirectory)~Old\Background_Cleaning_Job.md" />
-    <None Include="$(MSBuildThisFileDirectory)ThinkHow\Why not message queues.md" />
+    <None Include="$(MSBuildThisFileDirectory)~Old\Why not message queues.md" />
     <None Include="$(MSBuildThisFileDirectory)ThinkHow\RF Calls a Service.md" />
     <None Include="$(MSBuildThisFileDirectory)ThinkHow\اتصال متحقق.md" />
     <None Include="$(MSBuildThisFileDirectory)UsefulSnippet\AddEnternalProps.csx" />
