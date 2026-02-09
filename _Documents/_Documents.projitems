@@ -18,6 +18,7 @@
     <None Include="$(MSBuildThisFileDirectory)Planning\Security, Retention, and Performance Optimization.md" />
     <None Include="$(MSBuildThisFileDirectory)Planning\SQLite-backed Outbox-Performance.md" />
     <None Include="$(MSBuildThisFileDirectory)Planning\System Observability &amp; Diagnostic Endpoints.md" />
+    <None Include="$(MSBuildThisFileDirectory)Planning\ResumableFunctions — Phase 2 Implementation Plan.md" />
     <None Include="$(MSBuildThisFileDirectory)Planning\Workflow-Plan.md" />
     <None Include="$(MSBuildThisFileDirectory)~Old\Services And Clients Communication.md" />
     <None Include="$(MSBuildThisFileDirectory)GitHubDocs\WIN_V1.0.10.md" />
