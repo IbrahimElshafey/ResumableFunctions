@@ -13,6 +13,12 @@
     <None Include="$(MSBuildThisFileDirectory)DB\delete_tests_dbs.sql" />
     <None Include="$(MSBuildThisFileDirectory)GitHubDocs\BasicWaitTypes.md" />
     <None Include="$(MSBuildThisFileDirectory)GitHubDocs\WaitTypesUseCases.md" />
+    <None Include="$(MSBuildThisFileDirectory)Planning\-NoNeed\Visual Workflow Designer %28Phase 4%29.md" />
+    <None Include="$(MSBuildThisFileDirectory)Planning\Resumable Functions Ecosystem.md" />
+    <None Include="$(MSBuildThisFileDirectory)Planning\Security, Retention, and Performance Optimization.md" />
+    <None Include="$(MSBuildThisFileDirectory)Planning\SQLite-backed Outbox-Performance.md" />
+    <None Include="$(MSBuildThisFileDirectory)Planning\System Observability &amp; Diagnostic Endpoints.md" />
+    <None Include="$(MSBuildThisFileDirectory)Planning\Workflow-Plan.md" />
     <None Include="$(MSBuildThisFileDirectory)~Old\Services And Clients Communication.md" />
     <None Include="$(MSBuildThisFileDirectory)GitHubDocs\WIN_V1.0.10.md" />
     <None Include="$(MSBuildThisFileDirectory)GitHubDocs\What Help.md" />
