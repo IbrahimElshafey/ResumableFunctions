@@ -2,7 +2,7 @@
 using ResumableFunctions.Handler.InOuts.Entities;
 using System.Reflection;
 
-namespace ResumableFunctions.Handler.DataAccess.Abstraction
+namespace ResumableFunctions.Handler.Abstraction.Abstraction
 {
     public interface IMethodIdsRepo
     {

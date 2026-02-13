@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using ResumableFunctions.Handler.Abstraction.Abstraction;
 using ResumableFunctions.Handler.Core.Abstraction;
-using ResumableFunctions.Handler.DataAccess.Abstraction;
 using ResumableFunctions.Handler.DataAccess.InOuts;
 using ResumableFunctions.Handler.Expressions;
 using ResumableFunctions.Handler.Helpers;

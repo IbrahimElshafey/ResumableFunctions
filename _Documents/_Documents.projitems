@@ -13,6 +13,7 @@
     <None Include="$(MSBuildThisFileDirectory)DB\delete_tests_dbs.sql" />
     <None Include="$(MSBuildThisFileDirectory)GitHubDocs\BasicWaitTypes.md" />
     <None Include="$(MSBuildThisFileDirectory)GitHubDocs\WaitTypesUseCases.md" />
+    <None Include="$(MSBuildThisFileDirectory)_Phase-1\_Phase-1-plan.md" />
     <None Include="$(MSBuildThisFileDirectory)_Phase-2\-NoNeed\Visual Workflow Designer (Phase 4).md" />
     <None Include="$(MSBuildThisFileDirectory)_Phase-2\1-Resumable Functions Ecosystem.md" />
     <None Include="$(MSBuildThisFileDirectory)_Phase-2\Security, Retention, and Performance Optimization.md" />
@@ -58,7 +59,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)GitHubDocs\IMG\" />
-    <Folder Include="$(MSBuildThisFileDirectory)_Phase-1\" />
     <Folder Include="$(MSBuildThisFileDirectory)~Old\" />
   </ItemGroup>
 </Project>

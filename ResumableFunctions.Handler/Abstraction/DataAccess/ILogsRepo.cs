@@ -1,6 +1,6 @@
 ﻿using ResumableFunctions.Handler.InOuts;
 
-namespace ResumableFunctions.Handler.DataAccess.Abstraction;
+namespace ResumableFunctions.Handler.Abstraction.Abstraction;
 
 //Todo:Must be moved to diffrent DB
 public interface ILogsRepo

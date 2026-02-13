@@ -21,7 +21,7 @@
 	* Uniqe index exception handel
 	* Find lock postions BackgroundJobExecutor.ExecuteWithLock
 * Review all places where database update occurs
-* 
+
 * Use same dll in two different services must be allowed
 * Remove SaveChangesAsync and,SaveChangesdDirectly from repo implementations
 	* Use transactions

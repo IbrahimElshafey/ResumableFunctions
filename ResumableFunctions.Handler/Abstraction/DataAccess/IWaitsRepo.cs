@@ -4,7 +4,7 @@ using ResumableFunctions.Handler.InOuts.Entities;
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace ResumableFunctions.Handler.DataAccess.Abstraction;
+namespace ResumableFunctions.Handler.Abstraction.Abstraction;
 
 public interface IWaitsRepo
 {

@@ -1,4 +1,4 @@
-﻿using ResumableFunctions.Handler.DataAccess.Abstraction;
+﻿using ResumableFunctions.Handler.Abstraction.Abstraction;
 using ResumableFunctions.Handler.InOuts.Entities;
 
 namespace ResumableFunctions.Handler.DataAccess;

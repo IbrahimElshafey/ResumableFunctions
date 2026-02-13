@@ -39,8 +39,7 @@ namespace ResumableFunctions.Handler.Testing
         public async Task DeleteDb(string dbName)
         {
             var dbConfig = new DbContextOptionsBuilder()
-                .UseSqlServer(
-                    $"Server=(localdb)\\MSSQLLocalDB;Database={dbName};Trusted_Connection=True;TrustServerCertificate=True;");
+                .UseInMemoryDatabase(dbName);
             var context = new DbContext(dbConfig.Options);
             try
             {

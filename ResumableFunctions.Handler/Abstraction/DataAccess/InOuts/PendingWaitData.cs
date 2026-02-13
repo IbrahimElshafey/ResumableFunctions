@@ -1,7 +1,7 @@
 ﻿using ResumableFunctions.Handler.InOuts.Entities;
 using System.Linq.Expressions;
 
-namespace ResumableFunctions.Handler.DataAccess.InOuts
+namespace ResumableFunctions.Handler.Abstraction.DataAccess.InOuts
 {
     public record ExpectedWaitMatch(
         long WaitId,

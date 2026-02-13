@@ -22,7 +22,7 @@ namespace ResumableFunctions.Handler.Testing
 
         public DbContextOptionsBuilder WaitsDbConfig =>
          new DbContextOptionsBuilder()
-         .UseSqlServer($"Server=(localdb)\\MSSQLLocalDB;Database={_testName};Trusted_Connection=True;TrustServerCertificate=True;");
+         .UseInMemoryDatabase(_testName);
 
 
         public string CurrentServiceUrl => null;

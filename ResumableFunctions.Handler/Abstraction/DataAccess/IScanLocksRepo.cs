@@ -1,4 +1,4 @@
-﻿namespace ResumableFunctions.Handler.DataAccess.Abstraction
+﻿namespace ResumableFunctions.Handler.Abstraction.Abstraction
 {
     //todo:must be reviewed
     public interface IScanLocksRepo

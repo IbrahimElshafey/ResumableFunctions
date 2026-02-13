@@ -1,6 +1,6 @@
 ﻿using ResumableFunctions.Handler.InOuts.Entities;
 
-namespace ResumableFunctions.Handler.DataAccess.Abstraction
+namespace ResumableFunctions.Handler.Abstraction.Abstraction
 {
     public interface IPrivateDataRepo
     {
