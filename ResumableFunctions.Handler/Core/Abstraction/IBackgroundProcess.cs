@@ -2,7 +2,7 @@
 
 namespace ResumableFunctions.Handler.Core.Abstraction
 {
-    //todo: Candidate for MassTransit
+    //todo: Candidate for Inbox/Outbox pattern
     public interface IBackgroundProcess
     {
         public string Enqueue(Expression<Func<Task>> methodCall);

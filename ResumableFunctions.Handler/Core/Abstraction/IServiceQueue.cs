@@ -2,7 +2,7 @@
 
 namespace ResumableFunctions.Handler.Core.Abstraction
 {
-    //todo:cadidate for MassTransit
+    //todo:Candidate for Inbox/Outbox pattern
     public interface IServiceQueue
     {
         Task IdentifyAffectedServices(long pushedCallId, DateTime puhsedCallDate, string methodUrn);

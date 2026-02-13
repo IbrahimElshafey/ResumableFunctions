@@ -13,13 +13,13 @@
     <None Include="$(MSBuildThisFileDirectory)DB\delete_tests_dbs.sql" />
     <None Include="$(MSBuildThisFileDirectory)GitHubDocs\BasicWaitTypes.md" />
     <None Include="$(MSBuildThisFileDirectory)GitHubDocs\WaitTypesUseCases.md" />
-    <None Include="$(MSBuildThisFileDirectory)Planning\-NoNeed\Visual Workflow Designer %28Phase 4%29.md" />
-    <None Include="$(MSBuildThisFileDirectory)Planning\Resumable Functions Ecosystem.md" />
-    <None Include="$(MSBuildThisFileDirectory)Planning\Security, Retention, and Performance Optimization.md" />
-    <None Include="$(MSBuildThisFileDirectory)Planning\SQLite-backed Outbox-Performance.md" />
-    <None Include="$(MSBuildThisFileDirectory)Planning\System Observability &amp; Diagnostic Endpoints.md" />
-    <None Include="$(MSBuildThisFileDirectory)Planning\ResumableFunctions — Phase 2 Implementation Plan.md" />
-    <None Include="$(MSBuildThisFileDirectory)Planning\Workflow-Plan.md" />
+    <None Include="$(MSBuildThisFileDirectory)_Phase-2\-NoNeed\Visual Workflow Designer (Phase 4).md" />
+    <None Include="$(MSBuildThisFileDirectory)_Phase-2\1-Resumable Functions Ecosystem.md" />
+    <None Include="$(MSBuildThisFileDirectory)_Phase-2\Security, Retention, and Performance Optimization.md" />
+    <None Include="$(MSBuildThisFileDirectory)_Phase-2\SQLite-backed Outbox-Performance.md" />
+    <None Include="$(MSBuildThisFileDirectory)_Phase-2\System Observability &amp; Diagnostic Endpoints.md" />
+    <None Include="$(MSBuildThisFileDirectory)_Phase-2\ResumableFunctions — Phase 2 Implementation Plan.md" />
+    <None Include="$(MSBuildThisFileDirectory)_Phase-2\Workflow-Plan.md" />
     <None Include="$(MSBuildThisFileDirectory)~Old\Services And Clients Communication.md" />
     <None Include="$(MSBuildThisFileDirectory)GitHubDocs\WIN_V1.0.10.md" />
     <None Include="$(MSBuildThisFileDirectory)GitHubDocs\What Help.md" />
@@ -37,26 +37,27 @@
     <None Include="$(MSBuildThisFileDirectory)~Old\Publisher.md" />
     <None Include="$(MSBuildThisFileDirectory)~Old\Features.md" />
     <None Include="$(MSBuildThisFileDirectory)Reading and Ideas\Service Fabric.md" />
-    <None Include="$(MSBuildThisFileDirectory)Testing.md" />
+    <None Include="$(MSBuildThisFileDirectory)_Phase-1\Testing.md" />
     <None Include="$(MSBuildThisFileDirectory)~Old\MVC_Use.md" />
     <None Include="$(MSBuildThisFileDirectory)~Old\Background_Cleaning_Job.md" />
     <None Include="$(MSBuildThisFileDirectory)~Old\Why not message queues.md" />
     <None Include="$(MSBuildThisFileDirectory)ThinkHow\RF Calls a Service.md" />
     <None Include="$(MSBuildThisFileDirectory)ThinkHow\اتصال متحقق.md" />
     <None Include="$(MSBuildThisFileDirectory)UsefulSnippet\AddEnternalProps.csx" />
-    <None Include="$(MSBuildThisFileDirectory)Versioning-Migration.md" />
+    <None Include="$(MSBuildThisFileDirectory)_Phase-1\Versioning-Migration.md" />
     <None Include="$(MSBuildThisFileDirectory)~Old\Concurrency.md" />
-    <None Include="$(MSBuildThisFileDirectory)UI.md" />
-    <None Include="$(MSBuildThisFileDirectory)Roslyn_Analyzer.md" />
+    <None Include="$(MSBuildThisFileDirectory)_Phase-1\UI.md" />
+    <None Include="$(MSBuildThisFileDirectory)_Phase-1\Roslyn_Analyzer.md" />
     <None Include="$(MSBuildThisFileDirectory)~Old\Refactor_and_Enhancements.md" />
     <None Include="$(MSBuildThisFileDirectory)ThinkHow\Other_Wait_Types.md" />
-    <None Include="$(MSBuildThisFileDirectory)README.md" />
-    <None Include="$(MSBuildThisFileDirectory)Data Store Options.md" />
+    <None Include="$(MSBuildThisFileDirectory)_Phase-1\README.md" />
+    <None Include="$(MSBuildThisFileDirectory)_Phase-1\Data Store Options.md" />
     <None Include="$(MSBuildThisFileDirectory)~Old\How_It_works.md" />
-    <None Include="$(MSBuildThisFileDirectory)_Todo.md" />
+    <None Include="$(MSBuildThisFileDirectory)_Phase-1\_Todo.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)GitHubDocs\IMG\" />
+    <Folder Include="$(MSBuildThisFileDirectory)_Phase-1\" />
     <Folder Include="$(MSBuildThisFileDirectory)~Old\" />
   </ItemGroup>
 </Project>

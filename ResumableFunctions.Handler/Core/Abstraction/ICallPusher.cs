@@ -4,7 +4,7 @@ using ResumableFunctions.Handler.InOuts.Entities;
 namespace ResumableFunctions.Handler.Core.Abstraction
 {
 
-    //todo: Candidate for MassTransit
+    //todo: Candidate for Inbox/Outbox pattern
     public interface ICallPusher
     {
         Task<long> PushCall(PushedCall pushedCall);
