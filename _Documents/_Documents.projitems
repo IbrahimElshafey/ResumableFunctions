@@ -19,6 +19,7 @@
     <None Include="$(MSBuildThisFileDirectory)_Phase-2\SQLite-backed Outbox-Performance.md" />
     <None Include="$(MSBuildThisFileDirectory)_Phase-2\System Observability &amp; Diagnostic Endpoints.md" />
     <None Include="$(MSBuildThisFileDirectory)_Phase-2\ResumableFunctions — Phase 2 Implementation Plan.md" />
+    <None Include="$(MSBuildThisFileDirectory)_Phase-2\Reliable Messaging SQLite Outbox-Inbox Pattern.md" />
     <None Include="$(MSBuildThisFileDirectory)_Phase-2\Workflow-Plan.md" />
     <None Include="$(MSBuildThisFileDirectory)~Old\Services And Clients Communication.md" />
     <None Include="$(MSBuildThisFileDirectory)GitHubDocs\WIN_V1.0.10.md" />
