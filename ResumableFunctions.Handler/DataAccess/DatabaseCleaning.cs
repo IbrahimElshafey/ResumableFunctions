@@ -34,37 +34,45 @@ namespace ResumableFunctions.Handler.DataAccess
                 .ToListAsync();
             if (instanceIds.Any())
             {
-                using var transaction = _context.Database.BeginTransaction();
-                var waitsCount = await _context.Waits
-                  .Where(wait => instanceIds.Contains(wait.FunctionStateId))
-                  .ExecuteDeleteAsync();
+                var useTransaction = !_context.Database.IsInMemory();
+                var transaction = useTransaction ? _context.Database.BeginTransaction() : null;
+                try
+                {
+                    var waitsCount = await _context.Waits
+                      .Where(wait => instanceIds.Contains(wait.FunctionStateId))
+                      .ExecuteDeleteAsync();
 
-                var privateDataCount = await _context.PrivateData
-                  .Where(privateData => instanceIds.Contains(privateData.FunctionStateId.Value))
-                  .ExecuteDeleteAsync();
+                    var privateDataCount = await _context.PrivateData
+                      .Where(privateData => instanceIds.Contains(privateData.FunctionStateId.Value))
+                      .ExecuteDeleteAsync();
 
-                var instancesCount = await _context.FunctionStates
-                    .Where(functionState => instanceIds.Contains(functionState.Id))
-                    .ExecuteDeleteAsync();
+                    var instancesCount = await _context.FunctionStates
+                        .Where(functionState => instanceIds.Contains(functionState.Id))
+                        .ExecuteDeleteAsync();
 
-                var logsCount = await _context.Logs
-                    .Where(logItem => 
-                            instanceIds.Contains((int)logItem.EntityId) && logItem.EntityType == EntityType.FunctionInstanceLog)
-                    .ExecuteDeleteAsync();
+                    var logsCount = await _context.Logs
+                        .Where(logItem =>
+                                instanceIds.Contains((int)logItem.EntityId) && logItem.EntityType == EntityType.FunctionInstanceLog)
+                        .ExecuteDeleteAsync();
 
-                var waitProcessingCount = await _context.WaitProcessingRecords
-                    .Where(waitProcessingRecord => instanceIds.Contains(waitProcessingRecord.StateId))
-                    .ExecuteDeleteAsync();
-                transaction.Commit();
-                
-                await _logsRepo.AddLog(
-                    $"* Delete [{privateDataCount}] private data record.\n"+
-                    $"* Delete [{logsCount}] logs related to completed functions instances done.\n"+
-                    $"* Delete [{instancesCount}] compeleted functions instances done.\n"+
-                    $"* Delete [{waitsCount}] waits related to completed functions instances done.\n"+
-                    $"* Delete [{waitProcessingCount}] wait processing record related to completed functions instances done.",
-                    LogType.Info,
-                    StatusCodes.DataCleaning);
+                    var waitProcessingCount = await _context.WaitProcessingRecords
+                        .Where(waitProcessingRecord => instanceIds.Contains(waitProcessingRecord.StateId))
+                        .ExecuteDeleteAsync();
+                    transaction?.Commit();
+
+                    await _logsRepo.AddLog(
+                        $"* Delete [{privateDataCount}] private data record.\n"+
+                        $"* Delete [{logsCount}] logs related to completed functions instances done.\n"+
+                        $"* Delete [{instancesCount}] compeleted functions instances done.\n"+
+                        $"* Delete [{waitsCount}] waits related to completed functions instances done.\n"+
+                        $"* Delete [{waitProcessingCount}] wait processing record related to completed functions instances done.",
+                        LogType.Info,
+                        StatusCodes.DataCleaning);
+                }
+                finally
+                {
+                    transaction?.Dispose();
+                }
             }
             await AddLog("Delete compeleted functions instances completed.");
         }

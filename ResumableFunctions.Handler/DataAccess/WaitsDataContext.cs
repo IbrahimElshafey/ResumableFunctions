@@ -31,9 +31,16 @@ internal sealed class WaitsDataContext : DbContext
         _settings = settings;
         try
         {
-            var database = Database.GetDbConnection().Database;
-            using var loc = lockProvider.AcquireLock(database);
-            Database.EnsureCreated();
+            if (Database.IsInMemory())
+            {
+                Database.EnsureCreated();
+            }
+            else
+            {
+                var database = Database.GetDbConnection().Database;
+                using var loc = lockProvider.AcquireLock(database);
+                Database.EnsureCreated();
+            }
         }
         catch (Exception ex)
         {
@@ -241,13 +248,24 @@ internal sealed class WaitsDataContext : DbContext
     {
         try
         {
-            using var transaction = Database.BeginTransaction();
-            BeforeSaveData();
-            var result = await base.SaveChangesAsync(cancellationToken);
-            await SaveEntitiesLogs(cancellationToken);
-            await AfterChangesSaved(cancellationToken);
-            transaction.Commit();
-            return result;
+            if (Database.IsInMemory())
+            {
+                BeforeSaveData();
+                var result = await base.SaveChangesAsync(cancellationToken);
+                await SaveEntitiesLogs(cancellationToken);
+                await AfterChangesSaved(cancellationToken);
+                return result;
+            }
+            else
+            {
+                using var transaction = Database.BeginTransaction();
+                BeforeSaveData();
+                var result = await base.SaveChangesAsync(cancellationToken);
+                await SaveEntitiesLogs(cancellationToken);
+                await AfterChangesSaved(cancellationToken);
+                transaction.Commit();
+                return result;
+            }
         }
         catch (Exception ex)
         {
