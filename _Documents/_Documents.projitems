@@ -15,6 +15,7 @@
     <None Include="$(MSBuildThisFileDirectory)GitHubDocs\WaitTypesUseCases.md" />
     <None Include="$(MSBuildThisFileDirectory)_Phase-1\_Phase-1-plan.md" />
     <None Include="$(MSBuildThisFileDirectory)_Phase-2\-NoNeed\Visual Workflow Designer (Phase 4).md" />
+    <None Include="$(MSBuildThisFileDirectory)_Phase-2\Architecture &amp; Interface Specification.md" />
     <None Include="$(MSBuildThisFileDirectory)_Phase-2\1-Resumable Functions Ecosystem.md" />
     <None Include="$(MSBuildThisFileDirectory)_Phase-2\Security, Retention, and Performance Optimization.md" />
     <None Include="$(MSBuildThisFileDirectory)_Phase-2\SQLite-backed Outbox-Performance.md" />
