@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "ResumableFunctions.Publisher": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:64329;http://localhost:64334"
+    }
+  }
+}

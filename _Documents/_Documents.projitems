@@ -23,6 +23,7 @@
     <None Include="$(MSBuildThisFileDirectory)_Phase-2\ResumableFunctions — Phase 2 Implementation Plan.md" />
     <None Include="$(MSBuildThisFileDirectory)_Phase-2\Reliable Messaging SQLite Outbox-Inbox Pattern.md" />
     <None Include="$(MSBuildThisFileDirectory)_Phase-2\Workflow-Plan.md" />
+    <None Include="$(MSBuildThisFileDirectory)_ResumableWorkflows\Engine Modules .md" />
     <None Include="$(MSBuildThisFileDirectory)~Old\Services And Clients Communication.md" />
     <None Include="$(MSBuildThisFileDirectory)GitHubDocs\WIN_V1.0.10.md" />
     <None Include="$(MSBuildThisFileDirectory)GitHubDocs\What Help.md" />

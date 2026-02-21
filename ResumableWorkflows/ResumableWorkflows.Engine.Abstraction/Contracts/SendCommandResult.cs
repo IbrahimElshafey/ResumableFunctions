@@ -1,0 +1,7 @@
+﻿using System;
+
+namespace ResumableWorkflows.Engine.Abstraction.Contracts
+{
+    public class SendCommandResult<CommandResponse> { }
+    public class SendCommandResult { }
+}

@@ -22,6 +22,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\ResumableFunctions.Handler\ResumableFunctions.Handler.csproj" />
+    <ProjectReference Include="..\..\ResumableFunctions\ResumableFunctions.AspNetService\ResumableFunctions.MvcUi.csproj" />
+    <ProjectReference Include="..\..\ResumableFunctions\ResumableFunctions.Handler\ResumableFunctions.Handler.csproj" />
   </ItemGroup>
 
 </Project>

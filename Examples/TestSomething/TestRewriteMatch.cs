@@ -107,7 +107,7 @@ namespace TestSomething
 
         private void MandatoryPartExpression(MatchExpressionWriter matchRewriter, ExpandoObject dynamicPushedCall, InputOutput pushedCall)
         {
-            //var callMandatoryPartExpression = matchRewriter.CallMandatoryPartExpression;
+            //var callMandatoryPartExpression = matchRewriter.CallMandatoryPartPaths;
             //var compiled = callMandatoryPartExpression.CompileFast();
             //var result = compiled.DynamicInvoke(pushedCall.Input, pushedCall.Output);
 

@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddResumableFunctionsCore(
-    new SqlServerResumableFunctionsSettings(null, "FakeOrderManagmentRequest3")
+    new SqlServerResumableFunctionsSettings(null, "FakeOrderManagmentRequest4")
     .SetCurrentServiceUrl("https://localhost:7003"));
 builder.Services.AddControllers()
     .AddResumableFunctionsMvcUi();
